@@ -1,0 +1,248 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+html {
+    font-size: 20px;
+    font-family: 'Roboto', sans-serif;
+}
+
+/* home */
+
+body {
+    background-color: black;
+}
+
+.header-main {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: black;
+    filter: drop-shadow(2px 5px 10px rgba(239, 203, 55, .6));
+}
+
+.header-snake {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    height: 60px;
+    width: 100%;
+    background-color: #3d5a80;
+    filter: drop-shadow(2px 5px 2px rgba(152, 193, 217, 1.0));
+}
+
+.header-logo {
+    color: #efcb37;
+    font-family: 'Roboto', sans-serif;
+    margin-left: 2.5rem;
+    font-size: .75em;
+    font-weight: 600;
+}
+
+.nav-bar {
+    margin-right: 2.5rem;
+}
+
+.header-link {
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+    color: white;
+    font-size: .75em;
+    padding: 12px;
+}
+
+#arcade-gallery {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    background-color: black;
+    height: 100vh;
+}
+
+.arcade-games {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    margin: 5%;
+    width: 400px;
+    height: 500px;
+}
+
+.snake-clip {
+    width: 500px;
+    filter: drop-shadow(0px 5px 15px rgba(255, 255, 255, 1.0));
+}
+
+/* snake */
+
+#snake {
+    background-color: #3d5a80;
+}
+
+#app {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    padding: 2rem 0;
+    background-color: #e0fbfc;
+    background-image: url("images/snakeBackground.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.game-title {
+    margin: .1em;
+    text-align: center;
+}
+
+.logo {
+    width: 300px;
+    filter: drop-shadow(2px 5px 2px rgba(152, 193, 217, 1.0));
+}
+
+.start {
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -60%);
+    background-color: #3d5a80;
+    color: white;
+    padding: 12px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 18px;
+}
+
+.start:hover {
+    background-color: #4289B3;
+}
+
+.score {
+    display: flex;
+    flex-direction: row;
+    color: white;
+    margin: .75em;
+    align-items: flex-end;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    color: black;
+    width: 500px;
+}
+
+.score h2 {
+    text-align: center;
+}
+
+.score-system {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: flex-end;
+    width: 250px;
+}
+
+.current-score, .best-score, .body-length {
+    color: black;
+    font-size: 25px;
+}
+
+.apple-image, .trophy-image {
+    height: 35px;
+    width: 35px;
+}
+
+.snake-body {
+    height: 30px;
+}
+
+.description {
+    font-size: 18px;
+    color: #4289B3;
+    text-align: center;
+    margin-bottom: 0;
+    line-height: 1.5em;
+}
+
+.description img {
+    height: 20px;
+}
+
+.game-key img {
+    height: 25px;
+}
+
+.game-key {
+    font-size: 19px;
+    color: #4289B3;
+}
+
+.snake-gameboard {
+    height: 500px;
+    width: 500px;
+    border: 1px solid black;
+    display: grid;
+    grid-template-rows: repeat(20, 25px);
+    grid-template-columns: repeat(20, 25px);
+    background-color: #293241;
+    background-image: url("images/gameBoardBackground.png");
+}
+
+.snake {
+    background-color: #3d5a80;
+    border-radius: 5px;
+}
+
+.apple {
+    background-image: url("images/appleIcon.png");
+    background-size: 100% 100%;
+    height: 25px;
+    width: 25px;
+}
+
+.banana {
+    background-image: url("images/banana.png");
+    background-size: 100% 100%;
+    height: 25px;
+    width: 25px;
+}
+
+.poison {
+    background-image: url("images/broccoli.png");
+    background-size: 100% 100%;
+    height: 25px;
+    width: 25px;
+}
+
+.game-over {
+    position: absolute;
+    top: 50%;
+    color: white;
+    font-size: 60px;
+    font-weight: 700;
+    display: none;
+    text-align: center;
+}
+
+.game-over button {
+    background-color: #ee6c4d;
+    color: white;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 18px;
+    margin-top: 0;
+}

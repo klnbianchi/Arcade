@@ -1,0 +1,233 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  border: none;
+}
+
+html {
+  font-size: 20px;
+  font-family: 'Roboto', sans-serif;
+}
+
+.header-main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  height: 60px;
+  background-color: #0f4c5c;
+  width: 100%;
+  filter: drop-shadow(2px 5px 2px rgba(152, 193, 217, 1.0));
+}
+
+.header-logo {
+  color: #efcb37;
+  margin-left: 2.5rem;
+  font-size: .75em;
+  font-weight: 600;
+}
+
+.nav-bar {
+  margin-right: 2.5rem;
+}
+
+.header-link {
+  text-decoration: none;
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  color: white;
+  font-size: .75em;
+  padding: 12px;
+}
+
+body {
+  background-color: #A6E3F2;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.game-title {
+  margin: 1em;
+}
+
+.game-logo {
+  width: 400px;
+}
+
+.player {
+  display: flex;
+  flex-direction: row;
+  color: white;
+  margin: 1em;
+  align-items: center;
+  justify-content: space-evenly;
+  flex-wrap: nowrap;
+  color: #0f4c5c;
+  width: 600px;
+}
+
+.player:first-child {
+  margin-right: 8%;
+}
+
+.player-letter {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 35px;
+  color: #e36414;
+}
+
+.player-bot {
+  display: none;
+}
+
+.gameboard {
+  display: grid;
+  width: 450px;
+  height: 450px;
+  grid-template-rows: repeat(3, 150px);
+  grid-template-columns: repeat(3, 150px);
+}
+
+.board {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+}
+
+.board:nth-child(3n+2) {
+  border-left: 8px solid #0f4c5c;
+  border-right: 8px solid #0f4c5c;
+}
+
+.board:nth-child(n+4):nth-child(-n+6) {
+  border-top: 8px solid #0f4c5c;
+  border-bottom: 8px solid #0f4c5c;
+}
+
+.active {
+  color: green;
+  border: 2px dotted #0f4c5c;
+  border-radius: 5px;
+  padding: 10px;
+}
+
+.form-pair {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: flex-end;
+  width: 600px;
+  margin-bottom: 1em;
+}
+
+#name1, #name2 {
+  padding: 5px;
+  margin-right: 2px;
+}
+
+label {
+  margin-right: .5em;
+  color: #e36414;
+}
+
+.player-2-label {
+  margin-left: 60px;
+}
+
+.player-names {
+  padding: 5px;
+  margin-left: 10px;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 16px;
+  background-color: #5f0f40;
+  color: white;
+  border-radius: 5px;
+}
+
+.text {
+  text-align: center;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 100px;
+  color: #e36414;
+}
+
+.start-buttons {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+.start {
+  background-color: #fb8b24;
+  color: #0f4c5c;
+  padding: 12px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 1px solid #0f4c5c;
+}
+
+.start:hover {
+  background-color: #e36414;
+}
+
+.bot {
+  background-color: #0f4c5c;
+  color: #fb8b24;
+  padding: 12px;
+  font-size: 25px;
+  border-radius: 5px;
+  border: 1px solid #fb8b24;
+  margin-left: 1em;
+}
+
+.bot:hover {
+  background-color: #08313b;
+}
+
+.game-over {
+  display: none;
+  color: #0f4c5c;
+  font-size: 50px;
+  position: absolute;
+  top: 65%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -65%);
+  padding: 10px;
+  width: 400px;
+  text-align: center;
+  background-image: url(images/scribbleBackground.png);
+  background-size: 100% 100%;
+}
+
+.winner {
+  color: #e36414;
+  font-family: 'Patrick Hand', cursive;
+  font-size: 90px;
+}
+
+.play-again {
+  font-family: 'Patrick Hand', cursive;
+  font-size: 30px;
+  padding: 6px;
+  width: 180px;
+  background-color: #5f0f40;
+  color: white;
+  border-radius: 5px;
+  border: 1px solid black;
+}
+
+.player-b {
+  display: none;
+}

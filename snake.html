@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script defer src="app.js"></script>
+    <title>Snake</title>
+  </head>
+
+  <body id="snake">
+    <header class="header-snake">
+      <div class="header-logo">KENDRA'S ARCADE</div>
+      <nav class="nav-bar">
+        <a class="header-link" href="/index.html">HOME</a>
+        <a class="header-link" href="/snake.html">SNAKE</a>
+        <a class="header-link" href="/ticTacToe.html">TIC-TAC-TOE</a>
+      </nav>
+    </header>
+    <main id="app">
+      <section class="game-over">
+        <div>GAME OVER</div>
+        <button class="play-again">PLAY AGAIN?</button>
+      </section>
+      <section class="game-title">
+        <img class="logo" src="/images/snakeAnimation.gif" />
+        <div class="description">
+          <p>
+            Snakes love to eat
+            <img src="/images/appleIcon.png" />s and
+            <img src="/images/banana.png" />s, but <b>HATE</b>
+            <img src="/images/broccoliNoOutline.png" />.
+          </p>
+          <p>The more they eat, the faster they move.</p>
+        </div>
+      </section>
+      <section class="score">
+        <h2>
+          <img class="apple-image" src="/images/appleIcon.png" />
+          <span class="current-score"></span>
+        </h2>
+        <h2>
+          <img class="snake-body" src="/images/snakeBody.png" />
+          <span class="body-length"></span>
+        </h2>
+        <h2>
+          <img class="trophy-image" src="/images/trophyIcon.png" />
+          <span class="best-score"></span>
+        </h2>
+        <section class="score-system">
+        <h3 class="game-key"><img src="/images/appleIcon.png" /> = +1</h3>
+        <h3 class="game-key"><img src="/images/banana.png" /> = +2</h3>
+        <h3 class="game-key"><img src="/images/broccoli.png" /> = -2</h3>
+      </section>
+      </section>
+      <section class="game-area">
+        <button class="start">&#9658; START</button>
+        <section class="snake-gameboard"></section>
+      </section>
+    </main>
+  </body>
+</html>
